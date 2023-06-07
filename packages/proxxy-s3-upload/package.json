@@ -32,14 +32,14 @@
   },
   "name": "proxxy-s3-upload",
   "author": "Jacob Wright <jacob@proxxyai.com>",
-  "module": "dist/next-s3-upload.esm.js",
+  "module": "dist/proxxy-s3-upload.esm.js",
   "size-limit": [
     {
-      "path": "dist/next-s3-upload.cjs.production.min.js",
+      "path": "dist/proxxy-s3-upload.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/next-s3-upload.esm.js",
+      "path": "dist/proxxy-s3-upload.esm.js",
       "limit": "10 KB"
     }
   ],

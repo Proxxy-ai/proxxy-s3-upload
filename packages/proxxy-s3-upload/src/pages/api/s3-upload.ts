@@ -37,14 +37,14 @@ let makeRouteHandler = (options: Options = {}): Handler => {
     if (missing.length > 0) {
       res
         .status(500)
-        .json({ error: `Next S3 Upload: Missing ENVs ${missing.join(', ')}` });
+        .json({ error: `Proxxy S3 Upload: Missing ENVs ${missing.join(', ')}` });
     } else {
       let uploadType = req.body._nextS3?.strategy;
       let filename = req.body.filename;
 
       let key = options.key
         ? await Promise.resolve(options.key(req, filename))
-        : `next-s3-uploads/${uuid()}/${sanitizeKey(filename)}`;
+        : `${uuid()}/${sanitizeKey(filename)}`;
       let { bucket, region, endpoint } = config;
 
       if (uploadType === 'presigned') {
