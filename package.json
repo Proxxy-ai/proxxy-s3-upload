@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "workspaces": ["packages/proxxy-s3-upload"],
   "scripts": {
     "dev": "npm workspace proxxy-s3-upload start",
