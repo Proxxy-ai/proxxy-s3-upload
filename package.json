@@ -1,10 +1,8 @@
 {
   "private": true,
-  "workspaces": ["packages/next-s3-upload", "packages/docs-site"],
+  "workspaces": ["packages/proxxy-s3-upload"],
   "scripts": {
-    "dev": "yarn workspace next-s3-upload start",
-    "build": "yarn workspace next-s3-upload build",
-    "docs": "yarn workspace docs-site dev",
-    "test": "yarn workspace docs-site cypress run"
+    "dev": "npm workspace next-s3-upload start",
+    "build": "npm workspace next-s3-upload build"
   }
 }
